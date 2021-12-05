@@ -1,0 +1,40 @@
+.footer {
+    background-color: #000;
+}
+.container {
+}
+.footer-block {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-block__logo {
+}
+.footer-block__content {
+}
+.footer-block__content-text {
+    margin-bottom: 15px;
+    font-family: 'PFCentroSansPro-Regular';
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.6;
+}
+.footer-block__info {
+}
+.footer-block__info-phone{
+    margin-bottom: 11px;
+}
+.footer-block__info-phone,
+.footer-block__info-email {
+    display: block;
+    font-family: 'PFCentroSansPro-Bold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+
+}
+.footer-block__info-email {
+}
