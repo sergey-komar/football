@@ -1,5 +1,13 @@
-.header {
-    background: url('../images/home/home-bg.jpg') no-repeat center bottom ;
+// .header {
+//     background: url('../images/home/home-bg.jpg') no-repeat center bottom ;
+// }
+.stiky_header{
+    height: 106px;
+    width: 100%;
+    position: fixed;
+    background: #006D56;
+    z-index: 100;
+    padding: 0 135px;
 }
 
 .header__top {
@@ -220,7 +228,6 @@
     position: relative;
     bottom: 35px;
   }
-  
   .camp-slider__inner .slick-dots li{
     position:relative;
     display:inline-block;
@@ -275,6 +282,64 @@
 
 
 
+// TRAINERS
+.trainers {
+    padding-bottom: 90px;
+}
+.trainers__content {
+    padding-top: 100px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #000;
+}
+.trainers__title,
+.school__title,
+.reviews__title {
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000;
+}
+.trainers__arrows {
+    display: flex;
+}
+.trainers__arrows-left,
+.trainers__arrows-rigth {
+    display: inline-block;
+}
+
+.trainers-slider {
+    margin-bottom: 90px;
+}
+
+.trainers-slider__item {
+    max-width: 270px;
+    width: 100%;
+}
+.trainers-slider__img img{
+    height: 360px;
+    margin-bottom: 20px;
+}
+.trainers-slider__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 246px;
+}
+.trainers-slider__content-title {
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000;
+}
+
+
+
+
 
 
 // peculiarities
@@ -315,6 +380,89 @@
     font-family: 'PFCentroSansPro-Regular';
     font-size: 25px;
     line-height: 30px;
+}
+
+
+
+
+// ACCARDION
+.programm__block{
+    height: 100px;
+    background-color: #006D56;
+}
+.programm__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.programm__img{
+    height: 100%;
+}
+.programm__img img{
+    height: 100%;
+    object-fit: cover;
+}
+.programm__content {
+    max-width: 615px;
+    margin-left: 25px;
+}
+.programm__content-title {
+    padding-top: 92px;
+    margin-bottom: 40px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 60px;
+    color: #000;
+    line-height: 60px;
+}
+
+.accardion__btn {
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    max-width: 615px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 7px solid black;
+   margin-bottom: 20px;
+   position: relative;
+}
+.accardion__btn::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/home/icon/plus.svg');
+    width: 20px;
+    height: 20px;
+    right: 0;
+}
+.accardion__title {
+    margin-bottom: 10px;
+    font-family: 'BebasNeue Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    line-height: 20px;
+}
+.accardion__content {
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: 500;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    opacity: 0.3;
+}
+.accardion__content{
+    display: none;
+}
+.accardion__content.active{
+    display: block;
 }
 
 
@@ -363,4 +511,142 @@
     font-size: 16px;
     line-height: 120%;
     color: #000;
+}
+
+
+
+// SCHOOLL
+
+
+.school__content {
+    padding-top: 40px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #000;
+}
+
+.school__arrows {
+    display: flex;
+}
+
+.school-bottom {
+    padding: 60px 180px;
+    background-color: #006D56;
+}
+.school-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.school-bottom__box-title {
+    font-family: 'BebasNeue Bold';
+    max-width: 370px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+}
+.school-bottom__box-item {
+   max-width: 210px;
+}
+.school-bottom__box-num {
+    margin-bottom: 10px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+}
+.school-bottom__box-text {
+    font-family: 'PFCentroSansPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+
+
+
+// REVIEWS
+
+.reviews__content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #000;
+}
+
+.reviews__arrows {
+    display: flex;
+    align-items: center;
+}
+.reviews__arrows-curent{
+    font-family: 'PFCentroSansPro-Black';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+}
+.reviews-slider {
+}
+.reviews-slider__inner {
+}
+.reviews-slider__box {
+    margin-bottom: 90px;
+    max-width: 880px;
+}
+.reviews-slider__box-title {
+    margin-bottom: 15px;
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    line-height: 20px;
+}
+.reviews-slider__box-text {
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+}
+.reviews-bottom {
+    padding: 30px 180px;
+    background-color: #006D56;
+}
+.reviews-bottom__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews-bottom__content-title {
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+}
+.reviews-bottom__content-button {
+    padding: 18px 94px;
+    font-family: 'PFCentroSansPro-Bold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background: #FAA40C;
+}
+.reviews-bottom__content-button a{
+    color: #000;
+}
+.map{
+    padding: 90px 100px;
+    margin-top: 120px;
+    background-color: #006D56;
+}
+.card-map{
+    height: 500px;
 }

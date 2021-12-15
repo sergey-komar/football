@@ -1,0 +1,225 @@
+.winter{
+    background: url('../images/winter/Rectangle\ 7.jpg')   no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.winter__content {
+   max-width: 609px;
+   margin-left: auto;
+   margin-right: auto;
+    transform: translateY(100%);
+}
+.winter__content-date {
+    margin-bottom: 14px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.winter__content-title {
+    margin-bottom: 10px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.winter__content-subtitle {
+    margin-bottom: 30px;
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.winter__content-bnt {
+    padding: 18px 72px;
+    max-width: 300px;
+    width: 100%;
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.02em;
+    background: #FAA40C;
+}
+
+
+
+
+// SEASON
+.season {
+    background-color:  #006D56;
+    padding-bottom: 50px;
+}
+
+.season__title {
+    padding-top: 80px;
+    padding-bottom: 117px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+}
+.season-slider {
+    margin-bottom: 117px;
+}
+
+.season-slider__content {
+    display: flex;
+    justify-content: space-between;
+}
+.season-slider__item {
+  flex-basis: 640px;
+}
+.season-slider__item-img {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.season-slider__item-text {
+    font-family: 'PFCentroSansPro-Regular';
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+}
+.season-slider__curent {
+    display: flex;
+    justify-content: space-between;
+}
+.season-slider__arrows-curent {
+    font-family: 'PFCentroSansPro-Black';
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 26px;
+}
+.season-slider__arrows img{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+// ПРОГРЕСС БАР
+.season-slider__inner .slick-dots{
+    padding:0;
+    position: relative;
+    top: 110px;
+  }
+  .season-slider__inner .slick-dots li{
+    position:relative;
+    display:inline-block;
+    width:65px;
+    height:5px;
+    margin:0 2px 0 0;
+    padding:0;
+    cursor:pointer;
+    background-color:#ccbdb6;
+    background-size:100% 100%;
+    background-image:-webkit-gradient(linear, left, right, color-stop(1, #000), color-stop(1, transparent));
+    background-image:-o-linear-gradient(left, #000 100%, transparent);
+    background-image:-moz-linear-gradient(left, #000 100%, transparent);
+    background-image:-webkit-linear-gradient(left, #000 100%, transparent);
+    background-image:linear-gradient(to right,#fff 100%,transparent 100%);
+    background-repeat:no-repeat;
+  }
+  
+  .season-slider__inner .slick-dots li:last-child{
+    margin-right:0;
+  }
+  
+  .season-slider__inner .slick-dots li:hover,.slider .slick-dots li.slick-active{
+    background-color:#a08a7f;
+  }
+  
+  .season-slider__inner .slick-dots li button{
+    display: none !important;
+  }
+  
+  .season-slider__inner .slick-dots li.slick-active~li{
+    background-size:0% 0%;
+  }
+  .season-slider__inner .slick-dots li.slick-active{
+    -webkit-animation:right 3s ease-in-out forwards;
+    -moz-animation:right 3s ease-in-out forwards;
+    -o-animation:right 3s ease-in-out forwards;
+    animation:right 3s ease-in-out forwards;
+  }
+  
+  @keyframes right{
+    0%{
+      background-size:0% 100%;
+    }
+  
+    100%{
+      background-size:100% 100%;
+    }
+  }
+  // ПРОГРЕСС БАР
+
+
+
+// PROGRAM CAMP
+.program-camp {
+    padding-bottom: 150px;
+}
+
+.program-camp__title {
+    padding-top: 80px;
+    margin-bottom: 86px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+.program-camp__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 65px;
+}
+.program-camp__box-item {
+    border-top: 7px solid #006D56;
+    padding-top: 9px;
+    flex-basis: 400px;
+    color: #006D56;
+}
+.program-camp__box-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.program-camp__box-num {
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 100%;
+}
+.program-camp__box-info {
+    margin-left: 20px;
+    font-family: 'PFCentroSansPro-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 120%;
+}
+.program-camp__box-text {
+    font-family: 'PFCentroSansPro-Regular';
+    font-weight: normal;
+    font-size: 16px;
+    color: #222222;
+}
