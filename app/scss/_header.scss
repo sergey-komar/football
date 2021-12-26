@@ -1,5 +1,5 @@
 .header {
-    height: 106px;
+   height: 100px;
     background-color:  #006D56;
     position: fixed;
     width: 100%;
@@ -9,4 +9,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header__content-center{
+    display: flex;
+    justify-content: center;
+}
+.header__content-item{
+    width: 33.33333%;
+}
+.header__top-phone,
+.header__top-email {
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    display: block;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: right;
+    color: #FCFCFC;
+   
 }

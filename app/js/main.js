@@ -78,4 +78,90 @@ $('.season-slider__inner').on('afterChange', function(event, slick, currentSlide
  });
 
 
+//  HOTEL
+$('.hotel-slider__inner').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    appendArrows: '.camp-slider__arrows',
+    prevArrow: ' <img src="./images/home/icon/camp-arrow.svg" alt="arrow">',
+    nextArrow: '<img src="./images/home/icon/camp-arroww.svg" alt="arrow">',
+    infinite: true,
+    dots: true,
+});
+
+$('.hotel-slider__inner').on('afterChange', function(event, slick, currentSlide){
+    $("#test").text(currentSlide + 1);
+ });
+
+
+
+ // ACCARDION WINTER
+$('.questions-accardion__btn').on('click', function(){
+    $(this).next().slideToggle(500); 
+ })
+
+
+
+//  TRAINERS SLIDER
+$('.trainer-slider__inner-one').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    appendArrows: '.trainer-slider__arrows-one',
+    prevArrow: '  <img src="./images/winter/season-arrow-left.svg" alt="">',
+    nextArrow: ' <img src="./images/winter/season-arrow-right.svg" alt="">',
+   
+    dots: true,
+})
+$('.trainer-slider__inner-two').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    appendArrows: '.trainer-slider__arrows-two',
+    prevArrow: '  <img src="./images/winter/season-arrow-left.svg" alt="">',
+    nextArrow: ' <img src="./images/winter/season-arrow-right.svg" alt="">',
+   
+    dots: true,
+})
+$('.trainer-slider__inner-three').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    appendArrows: '.trainer-slider__arrows-three',
+    prevArrow: '  <img src="./images/winter/season-arrow-left.svg" alt="">',
+    nextArrow: ' <img src="./images/winter/season-arrow-right.svg" alt="">',
+   
+    dots: true,
+})
+$('.trainer-slider__inner-four').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    appendArrows: '.trainer-slider__arrows-four-1',
+    prevArrow: ' <img src="./images/winter/season-arrow-left.svg" alt="">',
+    nextArrow: ' <img src="./images/winter/season-arrow-right.svg" alt="">',
+    dots: true,
+})
+
+$('.trainer-slider__inner-fife').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    appendArrows: '.trainer-slider__arrows-fife',
+    prevArrow: ' <img src="./images/winter/season-arrow-left.svg" alt="">',
+    nextArrow: ' <img src="./images/winter/season-arrow-right.svg" alt="">',
+    dots: true,
+})
+
+$('.trainer-slider__inner-six').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    appendArrows: '.trainer-slider__arrows-six',
+    prevArrow: ' <img src="./images/winter/season-arrow-left.svg" alt="">',
+    nextArrow: ' <img src="./images/winter/season-arrow-right.svg" alt="">',
+    dots: true,
+})
+
 });

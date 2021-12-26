@@ -1,21 +1,93 @@
-// .header {
-//     background: url('../images/home/home-bg.jpg') no-repeat center bottom ;
-// }
-.stiky_header{
-    height: 106px;
-    width: 100%;
-    position: fixed;
-    background: #006D56;
-    z-index: 100;
-    padding: 0 135px;
+.academy{
+    padding-top: 100px;
+    background: url('../images/home/bg.jpg') no-repeat center;
+    min-height: 100vh;
+    background-size: cover;
 }
-
-.header__top {
+.academy-content {
+    max-width: 790px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(70%);
+}
+.academy__title {
+    font-family: 'BebasNeue Bold';
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FCFCFC;
+    text-align: center;
+}
+.academy__subtitle {
     margin-bottom: 90px;
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FCFCFC;
+    text-align: center;
+}
+.academy__btn {
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px 72px;
+    background-color: #FAA40C;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+
+}
+.academy__season {
+    padding: 26px 70px;
+    max-width: 600px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+.academy__season-text {
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+}
+.academy__season-link {
+    padding-bottom: 3px;
+    color: #006D56;
+    border-bottom: 1px solid #006D56;
+}
+.academy-bottom {
+    height: 147px;
+    background-color: #006D56;
+}
+.academy-bottom__box {
+    padding-top: 22px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.academy-bottom__box-item {
+    max-width: 380px;
+}
+.academy-bottom__box-title {
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 60px;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: #FCFCFC;
+}
+.academy-bottom__box-text {
+    font-size: 20px;
+}
+
 .nav-icon {
     width: 50px;
     height: 30px;
@@ -45,126 +117,6 @@
     bottom: 12px;
     left: 0;
 }
-.header__top-phone,
-.header__top-email {
-    display: block;
-    font-family: 'BebasNeue Regular';
-    font-size: 16px;
-    line-height: 100%;
-    text-align: right;
-    color: #FCFCFC;
-}
-
-.header__center-title {
-    margin-bottom: 35px;
-    max-width: 787px;
-    font-family: 'BebasNeue Bold';
-    font-style: normal;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.02em;
-
-}
-.header__center-subtitle {
-    margin-bottom: 50px;
-    font-family: 'PFCentroSansPro-Medium';
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    text-align: center;
-}
-.header__center-btn {
-    margin-bottom: 120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 18px 72px;
-    font-family: 'PFCentroSansPro-Bold';
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    border: none;
-    text-align: center;
-    background: #FAA40C;
-    width: 300px;  
-}
-
-.header__info {
-    display: flex;
-    justify-content: space-between;
-}
-.header__info-applications {
-   padding: 25px 90px 26px 50px;
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    background: #FCFCFC;
-}
-.header__info-text,
-.header__info-link {
-    font-family: 'PFCentroSansPro-Medium';
-    font-weight: 500;
-   
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-}
-.header__info-text {
-    color: #000;
-
-}
-.header__info-link{
-    color: #006D56;
-    text-decoration: underline;
-}
-.header__info-year span{
-    color: #000;
-}
-.header__info-year {
-    margin-left: 15px;
-}
-
-.header__bottom {
-    height: 147px;
-    background: #006D56;
-}
-.header__bottom-block{
-    padding-top: 22px;
-    padding-bottom: 22px;
-    min-height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__bottom-item {
-    width: 250px;
-}
-.header__bottom-text {
-    font-size: 60px;
-    font-weight: bold;
-}
-.header__bottom-numbers {
-    font-size: 18px;
-}
-.slick-prev-header,
-.slick-next-header{
-    position: absolute;
-    z-index: 10;
-   top: 50%;
-}
-.slick-prev-header{
-    right: 0;
-}
-.slick-next-header{
-   left: 0;
-}
-
-
-
 
 // CAMP
 .camp-slider__box {
@@ -456,7 +408,7 @@
     color: #000;
     font-size: 16px;
     line-height: 19px;
-    opacity: 0.3;
+    opacity: 0.7;
 }
 .accardion__content{
     display: none;

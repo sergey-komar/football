@@ -77,6 +77,7 @@
 .season-slider__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .season-slider__item {
   flex-basis: 640px;
@@ -111,6 +112,106 @@
     display: inline-block;
     margin-right: 50px;
 }
+
+
+@media(max-width:968px){
+    .season-slider__item{
+        margin-top: 50px;
+    }
+    .season__title{
+        padding-bottom: 30px;
+    }
+}
+@media(max-width:768px){
+    .header__top-phone, 
+    .header__top-email {
+        font-size: 18px;
+    }
+}
+@media(max-width:600px){
+.winter__content-title{
+    font-size: 45px;
+    line-height: 50px;
+}
+.season__title{
+    font-size: 45px;
+}
+.season-slider__item-text{
+    font-size: 24px;
+}
+}
+
+@media(max-width:550px){
+    .header__content-item{
+        width: auto;
+    }
+.header__top-contact{
+    display: none;
+} 
+.header__content-center{
+    margin-left: auto;
+    width: 60px;
+}
+.header{
+    height: 75px;
+}
+.header__content{
+    padding-top: 10px;
+}
+.winter__content{
+    transform: translateY(50%);
+}
+.winter__content-date{
+    font-size: 22px;
+}
+.winter__content-title{
+    font-size: 30px;
+    line-height: 34px;
+}
+.winter__content-bnt {
+    padding: 16px 32px;
+}
+.winter__content-subtitle{
+    margin-top: 30px;
+}
+.summer-block__img{
+    margin-bottom: 30px;
+}
+.season__title{
+    font-size: 30px;
+    line-height: 34px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+.season-slider__item-text{
+    font-size: 18px;
+    line-height: 28px;
+}
+.season-slider__item-img{
+    margin-bottom: 10px;
+    width: 65px;
+    height: 65px;
+}
+.season-slider__curent{
+    justify-content: flex-start;
+}
+.season-slider__arrows{
+    margin-left: 25px;
+}
+.season-slider{
+    margin-bottom: 0px;
+}
+.season-slider__inner .slick-dots {
+    top: 55px !important;
+}
+.season-slider__item{
+    margin-top: 10px;
+} 
+}
+
+
+
+
 
 // ПРОГРЕСС БАР
 .season-slider__inner .slick-dots{
@@ -172,9 +273,6 @@
 
 
 // PROGRAM CAMP
-.program-camp {
-    padding-bottom: 150px;
-}
 
 .program-camp__title {
     padding-top: 80px;
@@ -187,6 +285,7 @@
     color: #000;
 }
 .program-camp__box {
+    margin-bottom: 150px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -223,3 +322,351 @@
     font-size: 16px;
     color: #222222;
 }
+
+
+
+
+// HOTEL
+
+.hotel-slider__box {
+    display: flex;
+    justify-content: space-between;
+}
+.hotel-slider__box-slick{
+    display: flex;
+    justify-content: space-between;
+}
+.hotel-slider__content {
+    max-width: 480px;
+}
+.hotel-slider__subtitle {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #222222;
+    opacity: 0.5;
+}
+.hotel-slider__title {
+    font-family: 'BebasNeue Bold';
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+.hotel-slider__text {
+    font-family: 'PFCentroSansPro-Regular';
+    margin-bottom: 54px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #222222;
+}
+.hotel-slider__info {
+    display: flex;
+    align-items: center;
+}
+
+.hotel-slider__address {
+    margin-left: 20px;
+    font-family: 'PFCentroSansPro-Regular';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.programm__block.hotel__block{
+    margin-top: 100px;
+}
+
+// ПРОГРЕСС БАР
+.hotel-slider__inner .slick-dots{
+    padding:0;
+    position: relative;
+    bottom: 20px;
+  }
+  .hotel-slider__inner .slick-dots li{
+    position:relative;
+    display:inline-block;
+    width:65px;
+    height:5px;
+    margin:0 2px 0 0;
+    padding:0;
+    cursor:pointer;
+    background-color:#ccbdb6;
+    background-size:100% 100%;
+    background-image:-webkit-gradient(linear, left, right, color-stop(1, #000), color-stop(1, transparent));
+    background-image:-o-linear-gradient(left, #000 100%, transparent);
+    background-image:-moz-linear-gradient(left, #000 100%, transparent);
+    background-image:-webkit-linear-gradient(left, #000 100%, transparent);
+    background-image:linear-gradient(to right,#000 100%,transparent 100%);
+    background-repeat:no-repeat;
+  }
+  
+  .hotel-slider__inner .slick-dots li:last-child{
+    margin-right:0;
+  }
+  
+  .hotel-slider__inner .slick-dots li:hover,.slider .slick-dots li.slick-active{
+    background-color:#a08a7f;
+  }
+  
+  .hotel-slider__inner .slick-dots li button{
+    display: none !important;
+  }
+  
+  .hotel-slider__inner .slick-dots li.slick-active~li{
+    background-size:0% 0%;
+  }
+  .hotel-slider__inner .slick-dots li.slick-active{
+    -webkit-animation:right 1s ease-in-out forwards;
+    -moz-animation:right 1s ease-in-out forwards;
+    -o-animation:right 1s ease-in-out forwards;
+    animation:right 1s ease-in-out forwards;
+  }
+  
+  @keyframes right{
+    0%{
+      background-size:0% 100%;
+    }
+  
+    100%{
+      background-size:100% 100%;
+    }
+  }
+  // ПРОГРЕСС БАР
+
+
+
+
+
+//  ROUTINE 
+.routine__title {
+    padding-top: 60px;
+    margin-bottom: 72px;
+    font-family: 'BebasNeue Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+.routine-box {
+    display: flex;
+    justify-content: space-between;
+}
+.routine-box__item {
+    max-width: 334px;
+}
+.routine-box__item-title {
+    font-family: 'BebasNeue Bold';
+    padding-bottom: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #006D56;
+    border-bottom: 7px solid #006D56;
+}
+.routine-box__item-time {
+    margin-top: 30px;
+    margin-bottom: 7px;
+    font-family: 'PFCentroSansPro-Bold';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #222222;
+    opacity: 0.5;
+}
+.routine-box__item-timetable {
+    margin-bottom: 20px;
+    font-family: PF Centro Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+.programm__block.routine__block{
+    margin-top: 55px;
+}
+
+
+
+// PRICE
+   
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+}
+.price-box__desc {
+   max-width: 400px;
+}
+.price-box__desc-title {
+    padding-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+.price-box__desc-subtitle {
+    font-family: 'PFCentroSansPro-Regular';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    color: #222222;
+}
+.price-box__package {
+   display: flex;
+   justify-content: space-between;
+   column-gap: 50px;
+   flex-grow: 1;
+}  
+.price-box__item {
+    max-width: 480px;
+    flex-grow: 1;
+}
+.price-box__item-title {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #006D56;
+    border-bottom: 7px solid #006D56;
+}
+.price-box__item-text {
+    margin-bottom: 15px;
+    font-family: 'PFCentroSansPro-Regular';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.price-box__item-text--rub {
+}
+.price-box__item-price {
+    margin-bottom: 15px;
+    font-family: 'BebasNeue Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+.price-box__item-btn {
+    max-width: 480px;
+    width: 100%;
+    padding: 18px 60px;
+    color: #222222;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:  #FAA40C;
+    border: none;
+}
+.price-box__item-price--rub{
+    padding-top: 40px;
+    border-top: 7px solid #006D56;
+}
+
+
+
+// QUESTIONS
+
+.questions__title {
+    padding-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+
+.questions-accardion__btn {
+    position: relative;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    max-width: 900px;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 7px solid black;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+}
+
+.questions-accardion__title::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url('../images/home/icon/plus.svg');
+}
+.questions-accardion__title {
+    margin-bottom: 38px;
+    font-family: 'PFCentroSansPro-Medium';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+}
+.questions-accardion__content {
+    display: none;
+}
+.questions-accardion__text {
+    font-family: 'PFCentroSansPro-Regular';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.questions-accardion__text p{
+    margin-bottom: 15px;
+}
+
+.programm__block {
+    margin-top: 100px;
+}
+.questions__block-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.questions__block-title {
+    font-family: 'BebasNeue Bold';
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.02em;
+}
+
