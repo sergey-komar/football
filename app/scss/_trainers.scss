@@ -4,7 +4,8 @@
     background-color: #006D56;
 }
 .trainer-box {
-    display: flex;
+   display: flex;
+    
 }
 .trainer-slider {
     margin-bottom: 100px;
@@ -17,9 +18,9 @@
 .trainer-slider__inner-six {
     max-width: 930px;
 }
-.trainer-slider__img {
-}
+
 .trainer-slider__curent {
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +37,6 @@
 
 .trainer-box__content {
     padding-left: 60px;
-    padding-right: 60px;
     flex-grow: 1;
 }
 .trainer-box__content-subtitle {
@@ -195,3 +195,71 @@
     }
   }
   // ПРОГРЕСС БАР
+
+
+
+
+  @media(max-width:1350px){
+.trainer-box{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.trainer-box__content-subtitle{
+  padding-top: 0;
+}
+.trainer-slider{
+  margin-bottom: 55px;
+}
+.trainer-box__content{
+  margin-bottom: 60px;
+}
+
+.trainer-slider__inner-one,
+.trainer-slider__inner-two,
+.trainer-slider__inner-three,
+.trainer-slider__inner-four,
+.trainer-slider__inner-fife,
+.trainer-slider__inner-six {
+    max-width: 630px;
+}
+  }
+
+
+  @media(max-width:650px){
+    .trainer-slider__inner-one,
+.trainer-slider__inner-two,
+.trainer-slider__inner-three,
+.trainer-slider__inner-four,
+.trainer-slider__inner-fife,
+.trainer-slider__inner-six {
+    max-width: 430px;
+}
+  }
+
+
+
+  @media(max-width:550px){
+.trainer-box__content-title{
+  font-size: 27px;
+}
+.trainer-box__content-desc{
+  font-size: 18px;
+}
+.trainer-box__content-text{
+  font-size: 15px;
+}
+.trainer-box__content{
+  padding-left: 0;
+}
+  }
+
+  @media(max-width:450px){
+    .trainer-slider__inner-one,
+.trainer-slider__inner-two,
+.trainer-slider__inner-three,
+.trainer-slider__inner-four,
+.trainer-slider__inner-fife,
+.trainer-slider__inner-six {
+    max-width: 310px;
+}
+  }  

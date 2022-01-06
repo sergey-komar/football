@@ -114,6 +114,11 @@
 }
 
 
+
+
+
+
+
 @media(max-width:968px){
     .season-slider__item{
         margin-top: 50px;
@@ -127,7 +132,13 @@
     .header__top-email {
         font-size: 18px;
     }
+    
 }
+
+
+
+
+
 @media(max-width:600px){
 .winter__content-title{
     font-size: 45px;
@@ -139,7 +150,13 @@
 .season-slider__item-text{
     font-size: 24px;
 }
+
 }
+
+
+
+
+
 
 @media(max-width:550px){
     .header__content-item{
@@ -159,7 +176,7 @@
     padding-top: 10px;
 }
 .winter__content{
-    transform: translateY(50%);
+    transform: translateY(60%);
 }
 .winter__content-date{
     font-size: 22px;

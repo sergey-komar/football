@@ -8,22 +8,37 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <header class="header__content">
+<header class="header">
+    <div class="container">
+        <header class="header__content">
+            <div class="header__content-item">
                 <div class="nav-icon">
                     <div class="nav-icon__middle"></div>
                 </div>
-                <a href="#" class="header__top-logo">
-                    <img src="./images/home/logo.png" alt="logo">
-                  </a>
-                <div class="header__top-contact">
-                    <a href="#" class="header__top-phone">+7 (495) 215 20 27</a>
-                    <a href="#" class="header__top-email">camp@avangard-football.ru</a>
-                </div>
-            </header>
-        </div>
-    </header>
+
+                <div class="header__content-mobile">
+                    <a href="./index.html" class="header__content-item-mobile">О лагере</a>
+                    <a href="./summer.html" class="header__content-item-mobile">Осень</a>
+                    <a href="./winter.html" class="header__content-item-mobile">Зима</a>
+                    <a href="./trainers.html" class="header__content-item-mobile">Наши тренеры</a>
+                    <a href="./contact.html" class="header__content-item-mobile">Контакты</a>
+                  </div>
+            </div>
+            <div class="header__content-item header__content-center">
+            <a href="#" class="header__top-logo">
+                <img src="./images/home/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__content-item">
+            <div class="header__top-contact">
+                <a href="#" class="header__top-phone">+7 (495) 215 20 27</a>
+                <a href="#" class="header__top-email">camp@avangard-football.ru</a>
+            </div>
+            </div>
+            
+        </header>
+    </div>
+</header>
 
 <section class="winter">
     <div class="container">
@@ -37,7 +52,7 @@
             <p class="winter__content-subtitle">
                 7 дней интересной и эффективной тренировочной программы. Выйдете на новый уровень футбольного мастерства и получите максимальное удовольствие от любимого вида спорта. 
             </p>
-            <button class="winter__content-bnt">
+            <button class="winter__content-bnt" data-modal="#modal_form">
                 ОСТАВИТЬ ЗАЯВКУ
             </button>
         </div>
@@ -502,7 +517,7 @@
                     <p class="price-box__item-text">Для воспитанников Академии</p>
                     <div class="price-box__item-price">35 900 ₽</div>
                     <p class="price-box__item-text">Для воспитанников других школ</p>
-                    <button class="price-box__item-btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <button class="price-box__item-btn" data-modal="#modal_form">ОСТАВИТЬ ЗАЯВКУ</button>
                 </div>
 
                 <div class="price-box__item">
@@ -514,7 +529,7 @@
                     <p class="price-box__item-text">Досуговая программа</p>
                     <p class="price-box__item-text">Фирменная экипировка</p>
                     <div class="price-box__item-price price-box__item-price--rub">26 900 ₽</div>
-                    <button class="price-box__item-btn">ОСТАВИТЬ ЗАЯВКУ</button>
+                    <button class="price-box__item-btn" data-modal="#modal_form">ОСТАВИТЬ ЗАЯВКУ</button>
                 </div>
             </div>
 
@@ -590,7 +605,7 @@
     <div class="container">
         <div class="questions__block-content">
             <div class="questions__block-title">Внимание! Количество мест ограничено</div>
-        <button class="questions__block-btn price-box__item-btn">ОСТАВИТЬ ЗАЯВКУ</button>
+        <button class="questions__block-btn price-box__item-btn" data-modal="#modal_form">ОСТАВИТЬ ЗАЯВКУ</button>
         </div>
 </div>
 <footer class="footer">
@@ -613,6 +628,33 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="modal" id="modal_form">
+      <div class="modal-form">
+          <form class="form">
+              <h3 class="form__title">
+                  Заявка
+              </h3>
+              <p class="form__subtitle">
+                  Заполните форму для записи в наш лагерь
+              </p>
+              <div class="form__desc">лето-22 ,зима-22</div>
+              <input type="text" class="form__input" required placeholder="ФИО Участника лагеря(спортсмена)">
+              <div class="form__desc">Контакты для связи</div>
+              <input type="email" class="form__input" required placeholder="Email для связи">
+              <input type="tel" class="form__input" required placeholder="Телефон для связи">
+             <label class="form__label">
+                 <input type="checkbox" class="form__checkbox">
+                 <span class="form__checkbox-style">
+                    Даю согласие на обработку данных
+                 </span>
+             </label>
+              <button class="form__btn winter__content-bnt">Оставить заявку</button>
+              <button class="btn-close winter__content-bnt" data-close>Закрыть окно</button>
+          </form>
+      </div>
+  </div>
 <script src="js/main.min.js"></script>  
 </body>
 </html>

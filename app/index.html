@@ -11,18 +11,34 @@
 <body>
 <header class="header">
     <div class="container">
-        <div class="header__content">
-            <div class="nav-icon">
-                <div class="nav-icon__middle"></div>
+        <header class="header__content">
+            <div class="header__content-item">
+                <div class="nav-icon">
+                    <div class="nav-icon__middle"></div>
+                </div>
+
+                <div class="header__content-mobile">
+                  <a href="./index.html" class="header__content-item-mobile">О лагере</a>
+                  <a href="./summer.html" class="header__content-item-mobile">Осень</a>
+                  <a href="./winter.html" class="header__content-item-mobile">Зима</a>
+                  <a href="./trainers.html" class="header__content-item-mobile">Наши тренеры</a>
+                  <a href="./contact.html" class="header__content-item-mobile">Контакты</a>
+                </div>
+
             </div>
+          <div class="header__content-item header__content-center">
             <a href="#" class="header__top-logo">
                 <img src="./images/home/logo.png" alt="logo">
-                </a>
+              </a>
+          </div>
+           <div class="header__content-item">
             <div class="header__top-contact">
                 <a href="#" class="header__top-phone">+7 (495) 215 20 27</a>
                 <a href="#" class="header__top-email">camp@avangard-football.ru</a>
             </div>
-        </div>
+           </div>
+            
+        </header>
     </div>
 </header>
           
@@ -38,17 +54,19 @@
       <p class="academy__subtitle">
         ЗАРЯДИСЬ ФУТБОЛОМ НА ВСЕ 100%
       </p>
-      <button class="academy__btn">
+      <button class="academy__btn" data-modal="#modal_form">
         ОСТАВИТЬ ЗАЯВКУ
       </button>
   
     </div>
    
+
+    
     <div class="academy__season">
       <span class="academy__season-text">
         Открыт прием заявок на  →  
       </span>
-      <a href="#" class="academy__season-link">Осень 2022 →</a>
+      <a href="./summer.html" class="academy__season-link">Осень 2022 →</a>
       <a href="./winter.html" class="academy__season-link">и  Зиму 2022</a>
     </div>
   </div>
@@ -82,75 +100,95 @@
  
 </div>
 
-<section class="camp">
+ <section class="camp">
   <div class="container">
     <div class="camp-slider">
       <div class="camp-slider__inner">
-        <div class="camp-slider__box">
-          <div class="camp-slider__content">
-            <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
-            <p class="camp-slider__content-text">Футбольный лагерь «Авангард» проводится с 2013 года – 4 раза в год (осень, зима, весна и лето). Ежегодно в нашем лагере принимают участие несколько сотен спортсменов, которые приезжают из разных уголков России.
-            </p>
-          </div>
-          <div class="camp-slider__img">
-            <img src="./images/home/camp/camp-1.jpg" alt="">
-          </div>
-        </div>
-        <div class="camp-slider__box">
-          <div class="camp-slider__content">
-            <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
-            <p class="camp-slider__content-text">
-              Лагерь организуется по принципу тренировочных сборов – участников делят на команды по 10-15 человек, каждой команде назначается тренер, который полностью ведет свою команду в режиме 24/7.
-            </p>
-          </div>
-          <div class="camp-slider__img">
-            <img src="./images/home/camp/camp-2.jpg" alt="">
+
+        <div class="camp-box">
+          <div class="camp-slider__box">
+            <div class="camp-slider__content">
+              <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
+              <p class="camp-slider__content-text">Футбольный лагерь «Авангард» проводится с 2013 года – 4 раза в год (осень, зима, весна и лето). Ежегодно в нашем лагере принимают участие несколько сотен спортсменов, которые приезжают из разных уголков России.
+              </p>
+            </div>
+            <div class="camp-slider__img">
+              <img src="./images/home/camp/camp-1.jpg" alt="">
+            </div>
           </div>
         </div>
-        <div class="camp-slider__box">
-          <div class="camp-slider__content">
-            <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
-            <p class="camp-slider__content-text">
-              В тренировочном лагере работают только опытные и высоко квалифицированные тренеры из футбольной академии «Авангард» (Москва). Программа лагеря разработана методистами ФА «Авангард».
-            </p>
-          </div>
-          <div class="camp-slider__img">
-            <img src="./images/home/camp/camp-3.jpg" alt="camp">
-          </div>
-        </div>
-        <div class="camp-slider__box">
-          <div class="camp-slider__content">
-            <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
-            <p class="camp-slider__content-text">
-              Лагерь открыт для футболистов разного уровня – для начинающих, продвинутых и даже для футболистов из ТОП футбольных академий. Группы формируются с учетом возраста и уровня подготовки.
-            </p>
-          </div>
-          <div class="camp-slider__img">
-            <img src="./images/home/camp/camp-4.jpg" alt="camp">
+       
+        <div class="camp-box">
+          <div class="camp-slider__box">
+            <div class="camp-slider__content">
+              <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
+              <p class="camp-slider__content-text">
+                Лагерь организуется по принципу тренировочных сборов – участников делят на команды по 10-15 человек, каждой команде назначается тренер, который полностью ведет свою команду в режиме 24/7.
+              </p>
+            </div>
+            <div class="camp-slider__img">
+              <img src="./images/home/camp/camp-2.jpg" alt="">
+            </div>
           </div>
         </div>
-        <div class="camp-slider__box">
-          <div class="camp-slider__content">
-            <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
-            <p class="camp-slider__content-text">
-              В программе лагеря акцент делается не только на эффективные тренировки, но и на развитие личностных качеств детей и интересный, разнообразный досуг.
-            </p>
-          </div>
-          <div class="camp-slider__img">
-            <img src="./images/home/camp/camp-5.jpg" alt="camp">
-          </div>
-        </div>
-        <div class="camp-slider__box">
-          <div class="camp-slider__content">
-            <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
-            <p class="camp-slider__content-text">
-              Тренировки нацелены на развитие индивидуальных качеств спортсменов – техника владения мячом, координационные способности, быстрота в различных ее проявлениях.
-            </p>
-          </div>
-          <div class="camp-slider__img">
-            <img src="./images/home/camp/camp-6.jpg" alt="camp">
+       
+        <div class="camp-box">
+          <div class="camp-slider__box">
+            <div class="camp-slider__content">
+              <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
+              <p class="camp-slider__content-text">
+                В тренировочном лагере работают только опытные и высоко квалифицированные тренеры из футбольной академии «Авангард» (Москва). Программа лагеря разработана методистами ФА «Авангард».
+              </p>
+            </div>
+            <div class="camp-slider__img">
+              <img src="./images/home/camp/camp-3.jpg" alt="camp">
+            </div>
           </div>
         </div>
+       
+        <div class="camp-box">
+          <div class="camp-slider__box">
+            <div class="camp-slider__content">
+              <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
+              <p class="camp-slider__content-text">
+                Лагерь открыт для футболистов разного уровня – для начинающих, продвинутых и даже для футболистов из ТОП футбольных академий. Группы формируются с учетом возраста и уровня подготовки.
+              </p>
+            </div>
+            <div class="camp-slider__img">
+              <img src="./images/home/camp/camp-4.jpg" alt="camp">
+            </div>
+          </div>
+        </div>
+       
+        <div class="camp-box">
+          <div class="camp-slider__box">
+            <div class="camp-slider__content">
+              <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
+              <p class="camp-slider__content-text">
+                В программе лагеря акцент делается не только на эффективные тренировки, но и на развитие личностных качеств детей и интересный, разнообразный досуг.
+              </p>
+            </div>
+            <div class="camp-slider__img">
+              <img src="./images/home/camp/camp-5.jpg" alt="camp">
+            </div>
+          </div>
+        </div>
+       
+        <div class="camp-box">
+          <div class="camp-slider__box">
+            <div class="camp-slider__content">
+              <h5 class="camp-slider__content-title">О ЛАГЕРЕ</h5>
+              <p class="camp-slider__content-text">
+                Тренировки нацелены на развитие индивидуальных качеств спортсменов – техника владения мячом, координационные способности, быстрота в различных ее проявлениях.
+              </p>
+            </div>
+            <div class="camp-slider__img">
+              <img src="./images/home/camp/camp-6.jpg" alt="camp">
+            </div>
+          </div>
+        </div>
+       
+
       </div>
 
       <div class="camp-slider__curent">
@@ -231,81 +269,99 @@
     </div>
 
     <div class="trainers-slider">
-      <div class="trainers-slider__inner">
 
-        <div class="trainers-slider__item">
-          <div class="trainers-slider__img">
-            <img src="./images/home/trainers/trainers-1.jpg" alt="icon">
+     
+        <div class="trainers-slider__inner">
+
+
+          <div class="trainers-slider__item-wrapper">
+            <div class="trainers-slider__item">
+              <div class="trainers-slider__img">
+                <img src="./images/home/trainers/trainers-1.jpg" alt="icon">
+              </div>
+              <div class="trainers-slider__content">
+                <h6 class="trainers-slider__content-title">САДИКОВ МАРАТ РУСТЯМОВИЧ</h6>
+                <a href="trainersone.html" class="trainers-slider__content-arrows">
+                  <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="trainers-slider__content">
-            <h6 class="trainers-slider__content-title">САДИКОВ МАРАТ РУСТЯМОВИЧ</h6>
-            <a href="trainersone.html" class="trainers-slider__content-arrows">
-              <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
-            </a>
+         
+          <div class="trainers-slider__item-wrapper">
+            <div class="trainers-slider__item">
+              <div class="trainers-slider__img">
+                <img src="./images/home/trainers/trainers-2.jpg" alt="icon">
+              </div>
+              <div class="trainers-slider__content">
+                <h6 class="trainers-slider__content-title">МИТУСОВ АНДРЕЙ ИГОРЕВИЧ</h6>
+                <a href="trainerstwo.html" class="trainers-slider__content-arrows">
+                  <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
+                </a>
+              </div>
+            </div>
           </div>
+        
+          <div class="trainers-slider__item-wrapper">
+            <div class="trainers-slider__item">
+              <div class="trainers-slider__img">
+                <img src="./images/home/trainers/trainers-3.jpg" alt="icon">
+              </div>
+              <div class="trainers-slider__content">
+                <h6 class="trainers-slider__content-title">СУХИНОВ МАКСИМ ВАЛЕРЬЕВИЧ</h6>
+                <a href="trainersthree.html" class="trainers-slider__content-arrows">
+                  <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="trainers-slider__item-wrapper">
+            <div class="trainers-slider__item">
+              <div class="trainers-slider__img">
+                <img src="./images/home/trainers/trainers-4.jpg" alt="icon">
+              </div>
+              <div class="trainers-slider__content">
+                <h6 class="trainers-slider__content-title">КРОХА СЕРГЕЙ СЕРГЕЕВИЧ</h6>
+                <a href="trainersfour.html" class="trainers-slider__content-arrows">
+                  <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
+                </a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="trainers-slider__item-wrapper">
+            <div class="trainers-slider__item">
+              <div class="trainers-slider__img">
+                <img src="./images/home/trainers/trainers-5.jpg" alt="icon">
+              </div>
+              <div class="trainers-slider__content">
+                <h6 class="trainers-slider__content-title">Филипов Денис Валерьевич</h6>
+                <a href="trainersfife.html" class="trainers-slider__content-arrows">
+                  <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
+                </a>
+              </div>
+            </div>
+          </div>
+         
+          <div class="trainers-slider__item-wrapper">
+            <div class="trainers-slider__item">
+              <div class="trainers-slider__img">
+                <img src="./images/home/trainers/trainers-6.jpg" alt="icon">
+              </div>
+              <div class="trainers-slider__content">
+                <h6 class="trainers-slider__content-title">Миронов Николай Геннадьевич</h6>
+                <a href="trainerssix.html" class="trainers-slider__content-arrows">
+                  <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
+                </a>
+              </div>
+            </div>
+          </div>
+         
+  
         </div>
-
-        <div class="trainers-slider__item">
-          <div class="trainers-slider__img">
-            <img src="./images/home/trainers/trainers-2.jpg" alt="icon">
-          </div>
-          <div class="trainers-slider__content">
-            <h6 class="trainers-slider__content-title">МИТУСОВ АНДРЕЙ ИГОРЕВИЧ</h6>
-            <a href="trainerstwo.html" class="trainers-slider__content-arrows">
-              <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
-            </a>
-          </div>
-        </div>
-
-        <div class="trainers-slider__item">
-          <div class="trainers-slider__img">
-            <img src="./images/home/trainers/trainers-3.jpg" alt="icon">
-          </div>
-          <div class="trainers-slider__content">
-            <h6 class="trainers-slider__content-title">СУХИНОВ МАКСИМ ВАЛЕРЬЕВИЧ</h6>
-            <a href="trainersthree.html" class="trainers-slider__content-arrows">
-              <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
-            </a>
-          </div>
-        </div>
-
-        <div class="trainers-slider__item">
-          <div class="trainers-slider__img">
-            <img src="./images/home/trainers/trainers-4.jpg" alt="icon">
-          </div>
-          <div class="trainers-slider__content">
-            <h6 class="trainers-slider__content-title">КРОХА СЕРГЕЙ СЕРГЕЕВИЧ</h6>
-            <a href="trainersfour.html" class="trainers-slider__content-arrows">
-              <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
-            </a>
-          </div>
-        </div>
-
-        <div class="trainers-slider__item">
-          <div class="trainers-slider__img">
-            <img src="./images/home/trainers/trainers-5.jpg" alt="icon">
-          </div>
-          <div class="trainers-slider__content">
-            <h6 class="trainers-slider__content-title">Филипов Денис Валерьевич</h6>
-            <a href="trainersfife.html" class="trainers-slider__content-arrows">
-              <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
-            </a>
-          </div>
-        </div>
-
-        <div class="trainers-slider__item">
-          <div class="trainers-slider__img">
-            <img src="./images/home/trainers/trainers-6.jpg" alt="icon">
-          </div>
-          <div class="trainers-slider__content">
-            <h6 class="trainers-slider__content-title">Миронов Николай Геннадьевич</h6>
-            <a href="trainerssix.html" class="trainers-slider__content-arrows">
-              <img src="./images/home/trainers/trainers-arrows.png" alt="arrows">
-            </a>
-          </div>
-        </div>
-
-      </div>
+     
+     
     </div>
   </div>
   <div class="programm__block "></div>
@@ -416,7 +472,7 @@
 
 <section class="school">
   <div class="container">
-    <div class="school__content">
+    <div class="school__content-one">
       <h4 class="school__title">
         У нас побывали представители футбольных школ
       </h4>
@@ -547,7 +603,7 @@
       <div class="reviews-bottom__content">
         <h6 class="reviews-bottom__content-title">Ближайший футбольный тренировочный лагерь</h6>
         <div class="reviews-bottom__content-button">
-          <a href="">ПОСМОТРЕТЬ</a>
+          <a href="./summer.html">ПОСМОТРЕТЬ</a>
         </div>
       </div>
     </div>
@@ -562,7 +618,7 @@
 </main>
 
    
-
+ 
 
   
   <footer class="footer">
@@ -587,7 +643,31 @@
   </footer>
   
 
-
+  <div class="modal" id="modal_form">
+    <div class="modal-form">
+        <form class="form">
+            <h3 class="form__title">
+                Заявка
+            </h3>
+            <p class="form__subtitle">
+                Заполните форму для записи в наш лагерь
+            </p>
+            <div class="form__desc">лето-22 ,зима-22</div>
+            <input type="text" class="form__input" required placeholder="ФИО Участника лагеря(спортсмена)">
+            <div class="form__desc">Контакты для связи</div>
+            <input type="email" class="form__input" required placeholder="Email для связи">
+            <input type="tel" class="form__input" required placeholder="Телефон для связи">
+           <label class="form__label">
+               <input type="checkbox" class="form__checkbox">
+               <span class="form__checkbox-style">
+                  Даю согласие на обработку данных
+               </span>
+           </label>
+            <button class="form__btn winter__content-bnt">Оставить заявку</button>
+            <button class="btn-close winter__content-bnt" data-close>Закрыть окно</button>
+        </form>
+    </div>
+</div>
 
   <script src="js/main.min.js"></script>
 </body>

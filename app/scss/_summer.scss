@@ -76,13 +76,62 @@
         margin-bottom: 50px;  
     }    
 }
+
+
+@media(max-width:1200px){
+.hotel-slider__box{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.camp-slider__curent{
+    margin-top: 0;
+}
+.hotel-slider__inner .slick-dots{
+    bottom: -60px;
+}
+.hotel-slider__content{
+    margin-bottom: 20px;
+}
+.price-box{
+    flex-wrap: wrap;
+}
+.questions__block-content{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}
+
+
 @media(max-width:768px){
     .summer-block__content-title{
         font-size: 35px;
     }
     .summer-block__content-date{
         font-size: 18px;
-    }   
+    }
+    .program-camp__box{
+        justify-content: center;
+        margin-bottom: 50px;
+        row-gap: 40px;
+    }
+    .program-camp__title{
+        text-align: center;
+    } 
+    .programm__block {
+        margin-top: 0px;
+    }
+    .routine-box{
+        flex-wrap: wrap;
+    }
+    .price-box__package{
+        flex-wrap: wrap;
+    }
+    .questions__block-title{
+        font-size: 20px;
+    }
+    .footer-block{
+        display: block;
+    }              
 }
 
 @media(max-width:550px){
@@ -93,7 +142,110 @@
         font-size: 13px;
     } 
     .summer-block__btn {
-        margin-top: 40px;
-         
-    }      
+        margin-top: 40px;   
+    }
+    .program-camp__title{
+        padding-top: 50px;
+        margin-bottom: 15px;
+       font-size: 30px;
+    }
+.program-camp__box-num{
+    font-size: 37px;
+}
+.program-camp__box-info{
+    font-size: 18px;
+}
+.program-camp__box-text{
+    font-size: 16px;
+}
+.program-camp__box-item {
+    border-top: 3px solid #006D56;
+}
+.hotel-slider__title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.hotel-slider__subtitle{
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.programm__block {
+    height: 60px;
+}
+.programm__block.hotel__block {
+    margin-top: 20px;
+}
+.hotel-slider__inner .slick-dots{
+    padding-top: 10px;
+   bottom: 10px;
+}
+.hotel-slider__text{
+    margin-bottom: 25px;
+}
+.routine__title{
+    font-size: 30px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+.routine-box__item-timetable{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.routine-box__item-time{
+    margin-top: 10px;
+} 
+.routine-box__item-title{
+    border-bottom: 3px solid #006D56;
+}
+.programm__block.routine__block{
+    margin-top: 0;
+}
+.price-box__item-btn{
+    padding: 15px 60px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.price-box__desc-title{
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+.price-box__item-title{
+    padding-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #006D56;
+}
+.price-box__item-price{
+    font-size: 35px;
+}
+.price-box__item-price--rub {
+    border-top: 3px solid #006D56;
+    margin-bottom: 0;
+    padding-top: 20px;
+}
+.hotel-slider__inner .slick-dots li{
+    width: 50px;
+}
+.questions__block-btn.price-box__item-btn{
+    margin-top: 30px;
+}
+.questions__title{
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 30px;
+    margin-bottom: 15px;
+}
+.questions-accardion__title{
+    font-size: 16px;
+    line-height: 16px;
+    padding-right: 15px;
+}
+.questions-accardion__btn{
+    border-bottom: 3px solid black;
+}
+
+.questions__block-content{
+    height: auto;
+}                                  
 }

@@ -37,6 +37,35 @@ $('.trainers-slider__inner').slick({
     appendArrows: '.trainers__arrows',
     prevArrow: ' <img src="./images/home/icon/camp-arrow.svg" alt="arrow">',
     nextArrow: '<img src="./images/home/icon/camp-arroww.svg" alt="arrow">',
+
+    responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+           
+    
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]   
 });
 
 
@@ -47,6 +76,50 @@ $('.school-slider__inner').slick({
     appendArrows: '.school__arrows',
     prevArrow: ' <img src="./images/home/icon/camp-arrow.svg" alt="arrow">',
     nextArrow: '<img src="./images/home/icon/camp-arroww.svg" alt="arrow">',
+
+    responsive: [
+       
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+           
+    
+          }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+             
+      
+            }
+          },
+          {
+            breakpoint: 450,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+             
+      
+            }
+          }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]   
+
+
+
 });
 
 // REVIEWS
@@ -138,7 +211,7 @@ $('.trainer-slider__inner-four').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     fade: true,
-    appendArrows: '.trainer-slider__arrows-four-1',
+    appendArrows: '.trainer-slider__arrows-four',
     prevArrow: ' <img src="./images/winter/season-arrow-left.svg" alt="">',
     nextArrow: ' <img src="./images/winter/season-arrow-right.svg" alt="">',
     dots: true,
@@ -164,4 +237,40 @@ $('.trainer-slider__inner-six').slick({
     dots: true,
 })
 
+
+// MODAL
+const modalCall = $('[data-modal]');
+const modalCalllose = $('[data-close]');
+
+
+	modalCall.on('click', function(e){
+		e.preventDefault();
+
+		let $this = $(this);
+		let modalid = $this.data('modal');
+
+		$(modalid).addClass('show');
+		
+		
+	});
+
+	modalCalllose.on('click', function(e){
+		e.preventDefault();
+
+		let $this = $(this);
+		let modalParent = $this.parents('.modal');
+
+		modalParent.removeClass('show');
+		
+	});
+
+
+
 });
+
+
+// MOBILE BTN
+document.querySelector('.nav-icon').addEventListener('click', function(){
+  document.querySelector('.nav-icon__middle').classList.toggle('active');
+  document.querySelector('.header__content-mobile').classList.toggle('mobile-active')
+})
